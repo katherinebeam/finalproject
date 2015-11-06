@@ -37,10 +37,6 @@ ActiveRecord::Schema.define(version: 20151106033230) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.string   "username"
-    t.text     "bio"
-    t.string   "location"
-    t.string   "picture"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
