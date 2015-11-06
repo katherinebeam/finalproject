@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @adventure.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @adventure.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @adventure.picture %>
+</p>
+
+<p>
+  <strong>Neighborhood:</strong>
+  <%= @adventure.neighborhood %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @adventure.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @adventure.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @adventure.country %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @adventure.category %>
+</p>
+
+<%= link_to 'Edit', edit_adventure_path(@adventure) %> |
+<%= link_to 'Back', adventures_path %>
