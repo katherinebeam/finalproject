@@ -17,7 +17,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @profile.picture %>
+  <%= image_tag(@profile.picture_url, :width => 600) if @profile.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
