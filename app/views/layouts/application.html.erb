@@ -37,15 +37,15 @@
     </div>
   </div>
   </nav>
-
-    <%= yield %>
+  <div class="container">
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <div class="container">
+    <%= yield %>
+
   </div>
   <footer>
     <div class="container">
