@@ -18,6 +18,7 @@
 <p>
   <strong>Picture:</strong>
   <%= image_tag(@profile.picture_url, :width => 600) if @profile.picture.present? %>
+  <%= image_tag current_user.profile.picture_url(:thumb) %>
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
